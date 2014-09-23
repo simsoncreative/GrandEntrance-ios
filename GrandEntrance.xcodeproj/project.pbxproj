@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5000793F7FB4499A6195A2F /* libPods-GrandEntrance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E5704CF9EF4D7DB8470EDB /* libPods-GrandEntrance.a */; };
+		B6030847199D5233001439B6 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6030846199D5233001439B6 /* CoreBluetooth.framework */; };
+		B6030849199D5245001439B6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6030848199D5245001439B6 /* CoreLocation.framework */; };
+		B603084B199D524F001439B6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B603084A199D524F001439B6 /* SystemConfiguration.framework */; };
+		B6056D9119B072D500255F29 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2468619A680EE004CB9DB /* Transition.swift */; };
+		B6081071199CFE6900B159A3 /* SearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6081070199CFE6900B159A3 /* SearchDataSource.swift */; };
+		B6081074199D004E00B159A3 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6081073199D004E00B159A3 /* SearchItem.swift */; };
+		B64CA81B19B1B35000DEEDE6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B64CA81A19B1B35000DEEDE6 /* Settings.bundle */; };
+		B65869CE19A7277F0019C474 /* radar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B65869CD19A7277F0019C474 /* radar@2x.png */; };
+		B65869D019A72EEB0019C474 /* note@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B65869CF19A72EEB0019C474 /* note@2x.png */; };
+		B65869D219A730640019C474 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65869D119A730640019C474 /* QuartzCore.framework */; };
+		B65869D519A734A40019C474 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65869D419A734A40019C474 /* AudioToolbox.framework */; };
+		B65869D619A73B7F0019C474 /* status.caf in Resources */ = {isa = PBXBuildFile; fileRef = B65869D319A734080019C474 /* status.caf */; };
+		B65869D819A742B50019C474 /* shake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B65869D719A742B50019C474 /* shake@2x.png */; };
+		B6657F9119A684DD00693A40 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6835AFB199CF32B00198BC6 /* RoundedButton.swift */; };
+		B6835AD5199CED0900198BC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6835AD4199CED0900198BC6 /* AppDelegate.swift */; };
+		B6835AD7199CED0900198BC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6835AD6199CED0900198BC6 /* ViewController.swift */; };
+		B6835ADA199CED0900198BC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6835AD8199CED0900198BC6 /* Main.storyboard */; };
+		B6835ADC199CED0900198BC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6835ADB199CED0900198BC6 /* Images.xcassets */; };
+		B6835AE8199CED0900198BC6 /* GrandEntranceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6835AE7199CED0900198BC6 /* GrandEntranceTests.swift */; };
+		B6835AF3199CF0A600198BC6 /* grandentrance-background-color@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6835AF1199CF0A600198BC6 /* grandentrance-background-color@2x.png */; };
+		B6835AF6199CF21A00198BC6 /* grandentrance-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6835AF5199CF21A00198BC6 /* grandentrance-logo@2x.png */; };
+		B6835AFE199CF59D00198BC6 /* spotify-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6835AFD199CF59D00198BC6 /* spotify-logo@2x.png */; };
+		B6835B00199CF77100198BC6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6835AFF199CF77100198BC6 /* SearchViewController.swift */; };
+		B6C2467B19A67FE5004CB9DB /* SPOP.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2466819A67FE5004CB9DB /* SPOP.swift */; };
+		B6C2467C19A67FE5004CB9DB /* SPOPAnimatableProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C2466A19A67FE5004CB9DB /* SPOPAnimatableProperty.m */; };
+		B6C2467D19A67FE5004CB9DB /* SPOPAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C2466C19A67FE5004CB9DB /* SPOPAnimation.m */; };
+		B6C2467E19A67FE5004CB9DB /* SPOPAnimationTracer.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C2466E19A67FE5004CB9DB /* SPOPAnimationTracer.m */; };
+		B6C2467F19A67FE5004CB9DB /* SPOPBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C2467019A67FE5004CB9DB /* SPOPBasicAnimation.m */; };
+		B6C2468019A67FE5004CB9DB /* SPOPCustomAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C2467219A67FE5004CB9DB /* SPOPCustomAnimation.m */; };
+		B6C2468119A67FE5004CB9DB /* SPOPDecayAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C2467419A67FE5004CB9DB /* SPOPDecayAnimation.m */; };
+		B6C2468219A67FE5004CB9DB /* SPOPMutableAnimatableProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C2467619A67FE5004CB9DB /* SPOPMutableAnimatableProperty.m */; };
+		B6C2468319A67FE5004CB9DB /* SPOPPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C2467819A67FE5004CB9DB /* SPOPPropertyAnimation.m */; };
+		B6C2468419A67FE5004CB9DB /* SPOPSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C2467A19A67FE5004CB9DB /* SPOPSpringAnimation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6835AE2199CED0900198BC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6835AC7199CED0900198BC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6835ACE199CED0900198BC6;
+			remoteInfo = GrandEntrance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6030842199D4B95001439B6 /* GrandEntrance-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GrandEntrance-Bridging-Header.h"; sourceTree = "<group>"; };
+		B6030846199D5233001439B6 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		B6030848199D5245001439B6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B603084A199D524F001439B6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B6081070199CFE6900B159A3 /* SearchDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDataSource.swift; sourceTree = "<group>"; };
+		B6081073199D004E00B159A3 /* SearchItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
+		B64CA81A19B1B35000DEEDE6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		B65869CD19A7277F0019C474 /* radar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radar@2x.png"; sourceTree = "<group>"; };
+		B65869CF19A72EEB0019C474 /* note@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "note@2x.png"; sourceTree = "<group>"; };
+		B65869D119A730640019C474 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B65869D319A734080019C474 /* status.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = status.caf; sourceTree = "<group>"; };
+		B65869D419A734A40019C474 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B65869D719A742B50019C474 /* shake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shake@2x.png"; sourceTree = "<group>"; };
+		B6835ACF199CED0900198BC6 /* GrandEntrance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrandEntrance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6835AD3199CED0900198BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6835AD4199CED0900198BC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B6835AD6199CED0900198BC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B6835AD9199CED0900198BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6835ADB199CED0900198BC6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B6835AE1199CED0900198BC6 /* GrandEntranceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrandEntranceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6835AE6199CED0900198BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6835AE7199CED0900198BC6 /* GrandEntranceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandEntranceTests.swift; sourceTree = "<group>"; };
+		B6835AF1199CF0A600198BC6 /* grandentrance-background-color@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grandentrance-background-color@2x.png"; sourceTree = "<group>"; };
+		B6835AF5199CF21A00198BC6 /* grandentrance-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grandentrance-logo@2x.png"; sourceTree = "<group>"; };
+		B6835AFB199CF32B00198BC6 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		B6835AFD199CF59D00198BC6 /* spotify-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spotify-logo@2x.png"; sourceTree = "<group>"; };
+		B6835AFF199CF77100198BC6 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B6C2466719A67FE5004CB9DB /* SPOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPOP.h; path = "facebook-pop-for-swift/src/SPOP.h"; sourceTree = SOURCE_ROOT; };
+		B6C2466819A67FE5004CB9DB /* SPOP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPOP.swift; path = "facebook-pop-for-swift/src/SPOP.swift"; sourceTree = SOURCE_ROOT; };
+		B6C2466919A67FE5004CB9DB /* SPOPAnimatableProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPOPAnimatableProperty.h; path = "facebook-pop-for-swift/src/SPOPAnimatableProperty.h"; sourceTree = SOURCE_ROOT; };
+		B6C2466A19A67FE5004CB9DB /* SPOPAnimatableProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPOPAnimatableProperty.m; path = "facebook-pop-for-swift/src/SPOPAnimatableProperty.m"; sourceTree = SOURCE_ROOT; };
+		B6C2466B19A67FE5004CB9DB /* SPOPAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPOPAnimation.h; path = "facebook-pop-for-swift/src/SPOPAnimation.h"; sourceTree = SOURCE_ROOT; };
+		B6C2466C19A67FE5004CB9DB /* SPOPAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPOPAnimation.m; path = "facebook-pop-for-swift/src/SPOPAnimation.m"; sourceTree = SOURCE_ROOT; };
+		B6C2466D19A67FE5004CB9DB /* SPOPAnimationTracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPOPAnimationTracer.h; path = "facebook-pop-for-swift/src/SPOPAnimationTracer.h"; sourceTree = SOURCE_ROOT; };
+		B6C2466E19A67FE5004CB9DB /* SPOPAnimationTracer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPOPAnimationTracer.m; path = "facebook-pop-for-swift/src/SPOPAnimationTracer.m"; sourceTree = SOURCE_ROOT; };
+		B6C2466F19A67FE5004CB9DB /* SPOPBasicAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPOPBasicAnimation.h; path = "facebook-pop-for-swift/src/SPOPBasicAnimation.h"; sourceTree = SOURCE_ROOT; };
+		B6C2467019A67FE5004CB9DB /* SPOPBasicAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPOPBasicAnimation.m; path = "facebook-pop-for-swift/src/SPOPBasicAnimation.m"; sourceTree = SOURCE_ROOT; };
+		B6C2467119A67FE5004CB9DB /* SPOPCustomAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPOPCustomAnimation.h; path = "facebook-pop-for-swift/src/SPOPCustomAnimation.h"; sourceTree = SOURCE_ROOT; };
+		B6C2467219A67FE5004CB9DB /* SPOPCustomAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPOPCustomAnimation.m; path = "facebook-pop-for-swift/src/SPOPCustomAnimation.m"; sourceTree = SOURCE_ROOT; };
+		B6C2467319A67FE5004CB9DB /* SPOPDecayAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPOPDecayAnimation.h; path = "facebook-pop-for-swift/src/SPOPDecayAnimation.h"; sourceTree = SOURCE_ROOT; };
+		B6C2467419A67FE5004CB9DB /* SPOPDecayAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPOPDecayAnimation.m; path = "facebook-pop-for-swift/src/SPOPDecayAnimation.m"; sourceTree = SOURCE_ROOT; };
+		B6C2467519A67FE5004CB9DB /* SPOPMutableAnimatableProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPOPMutableAnimatableProperty.h; path = "facebook-pop-for-swift/src/SPOPMutableAnimatableProperty.h"; sourceTree = SOURCE_ROOT; };
+		B6C2467619A67FE5004CB9DB /* SPOPMutableAnimatableProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPOPMutableAnimatableProperty.m; path = "facebook-pop-for-swift/src/SPOPMutableAnimatableProperty.m"; sourceTree = SOURCE_ROOT; };
+		B6C2467719A67FE5004CB9DB /* SPOPPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPOPPropertyAnimation.h; path = "facebook-pop-for-swift/src/SPOPPropertyAnimation.h"; sourceTree = SOURCE_ROOT; };
+		B6C2467819A67FE5004CB9DB /* SPOPPropertyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPOPPropertyAnimation.m; path = "facebook-pop-for-swift/src/SPOPPropertyAnimation.m"; sourceTree = SOURCE_ROOT; };
+		B6C2467919A67FE5004CB9DB /* SPOPSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPOPSpringAnimation.h; path = "facebook-pop-for-swift/src/SPOPSpringAnimation.h"; sourceTree = SOURCE_ROOT; };
+		B6C2467A19A67FE5004CB9DB /* SPOPSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPOPSpringAnimation.m; path = "facebook-pop-for-swift/src/SPOPSpringAnimation.m"; sourceTree = SOURCE_ROOT; };
+		B6C2468619A680EE004CB9DB /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		E9E5704CF9EF4D7DB8470EDB /* libPods-GrandEntrance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GrandEntrance.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDFD2FB8E3D84699A7A20412 /* Pods-GrandEntrance.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrandEntrance.xcconfig"; path = "Pods/Pods-GrandEntrance.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6835ACC199CED0900198BC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65869D519A734A40019C474 /* AudioToolbox.framework in Frameworks */,
+				B65869D219A730640019C474 /* QuartzCore.framework in Frameworks */,
+				B603084B199D524F001439B6 /* SystemConfiguration.framework in Frameworks */,
+				B6030849199D5245001439B6 /* CoreLocation.framework in Frameworks */,
+				B6030847199D5233001439B6 /* CoreBluetooth.framework in Frameworks */,
+				A5000793F7FB4499A6195A2F /* libPods-GrandEntrance.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6835ADE199CED0900198BC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		114E13B6C1BD4D1E89F1130F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B65869D419A734A40019C474 /* AudioToolbox.framework */,
+				B65869D119A730640019C474 /* QuartzCore.framework */,
+				B603084A199D524F001439B6 /* SystemConfiguration.framework */,
+				B6030848199D5245001439B6 /* CoreLocation.framework */,
+				B6030846199D5233001439B6 /* CoreBluetooth.framework */,
+				E9E5704CF9EF4D7DB8470EDB /* libPods-GrandEntrance.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6081072199D002800B159A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6081070199CFE6900B159A3 /* SearchDataSource.swift */,
+				B6081073199D004E00B159A3 /* SearchItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B6835AC6199CED0900198BC6 = {
+			isa = PBXGroup;
+			children = (
+				B6835AD1199CED0900198BC6 /* GrandEntrance */,
+				B6835AE4199CED0900198BC6 /* GrandEntranceTests */,
+				B6835AD0199CED0900198BC6 /* Products */,
+				FDFD2FB8E3D84699A7A20412 /* Pods-GrandEntrance.xcconfig */,
+				114E13B6C1BD4D1E89F1130F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6835AD0199CED0900198BC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6835ACF199CED0900198BC6 /* GrandEntrance.app */,
+				B6835AE1199CED0900198BC6 /* GrandEntranceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6835AD1199CED0900198BC6 /* GrandEntrance */ = {
+			isa = PBXGroup;
+			children = (
+				B6835AD4199CED0900198BC6 /* AppDelegate.swift */,
+				B6C2468519A680C5004CB9DB /* Transitions */,
+				B6C2466619A67FC9004CB9DB /* Pop */,
+				B6835AF8199CF2C900198BC6 /* Resources */,
+				B6835AF9199CF2D600198BC6 /* Storyboards */,
+				B6081072199D002800B159A3 /* Model */,
+				B6835AFA199CF2F300198BC6 /* Views */,
+				B6835AF7199CF2C000198BC6 /* Controllers */,
+				B6835ADB199CED0900198BC6 /* Images.xcassets */,
+				B6835AD2199CED0900198BC6 /* Supporting Files */,
+				B6030842199D4B95001439B6 /* GrandEntrance-Bridging-Header.h */,
+				B64CA81A19B1B35000DEEDE6 /* Settings.bundle */,
+			);
+			path = GrandEntrance;
+			sourceTree = "<group>";
+		};
+		B6835AD2199CED0900198BC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6835AD3199CED0900198BC6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6835AE4199CED0900198BC6 /* GrandEntranceTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6835AE7199CED0900198BC6 /* GrandEntranceTests.swift */,
+				B6835AE5199CED0900198BC6 /* Supporting Files */,
+			);
+			path = GrandEntranceTests;
+			sourceTree = "<group>";
+		};
+		B6835AE5199CED0900198BC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6835AE6199CED0900198BC6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6835AF7199CF2C000198BC6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6835AD6199CED0900198BC6 /* ViewController.swift */,
+				B6835AFF199CF77100198BC6 /* SearchViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B6835AF8199CF2C900198BC6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B65869D719A742B50019C474 /* shake@2x.png */,
+				B65869D319A734080019C474 /* status.caf */,
+				B65869CF19A72EEB0019C474 /* note@2x.png */,
+				B65869CD19A7277F0019C474 /* radar@2x.png */,
+				B6835AF1199CF0A600198BC6 /* grandentrance-background-color@2x.png */,
+				B6835AF5199CF21A00198BC6 /* grandentrance-logo@2x.png */,
+				B6835AFD199CF59D00198BC6 /* spotify-logo@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B6835AF9199CF2D600198BC6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B6835AD8199CED0900198BC6 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		B6835AFA199CF2F300198BC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6835AFB199CF32B00198BC6 /* RoundedButton.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B6C2466619A67FC9004CB9DB /* Pop */ = {
+			isa = PBXGroup;
+			children = (
+				B6C2466719A67FE5004CB9DB /* SPOP.h */,
+				B6C2466819A67FE5004CB9DB /* SPOP.swift */,
+				B6C2466919A67FE5004CB9DB /* SPOPAnimatableProperty.h */,
+				B6C2466A19A67FE5004CB9DB /* SPOPAnimatableProperty.m */,
+				B6C2466B19A67FE5004CB9DB /* SPOPAnimation.h */,
+				B6C2466C19A67FE5004CB9DB /* SPOPAnimation.m */,
+				B6C2466D19A67FE5004CB9DB /* SPOPAnimationTracer.h */,
+				B6C2466E19A67FE5004CB9DB /* SPOPAnimationTracer.m */,
+				B6C2466F19A67FE5004CB9DB /* SPOPBasicAnimation.h */,
+				B6C2467019A67FE5004CB9DB /* SPOPBasicAnimation.m */,
+				B6C2467119A67FE5004CB9DB /* SPOPCustomAnimation.h */,
+				B6C2467219A67FE5004CB9DB /* SPOPCustomAnimation.m */,
+				B6C2467319A67FE5004CB9DB /* SPOPDecayAnimation.h */,
+				B6C2467419A67FE5004CB9DB /* SPOPDecayAnimation.m */,
+				B6C2467519A67FE5004CB9DB /* SPOPMutableAnimatableProperty.h */,
+				B6C2467619A67FE5004CB9DB /* SPOPMutableAnimatableProperty.m */,
+				B6C2467719A67FE5004CB9DB /* SPOPPropertyAnimation.h */,
+				B6C2467819A67FE5004CB9DB /* SPOPPropertyAnimation.m */,
+				B6C2467919A67FE5004CB9DB /* SPOPSpringAnimation.h */,
+				B6C2467A19A67FE5004CB9DB /* SPOPSpringAnimation.m */,
+			);
+			name = Pop;
+			sourceTree = "<group>";
+		};
+		B6C2468519A680C5004CB9DB /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				B6C2468619A680EE004CB9DB /* Transition.swift */,
+			);
+			name = Transitions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6835ACE199CED0900198BC6 /* GrandEntrance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6835AEB199CED0900198BC6 /* Build configuration list for PBXNativeTarget "GrandEntrance" */;
+			buildPhases = (
+				BB8F368EFFE742FC8D28E80E /* Check Pods Manifest.lock */,
+				B6835ACB199CED0900198BC6 /* Sources */,
+				B6835ACC199CED0900198BC6 /* Frameworks */,
+				B6835ACD199CED0900198BC6 /* Resources */,
+				2CAE479AFA9F4EA38986FFC0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrandEntrance;
+			productName = GrandEntrance;
+			productReference = B6835ACF199CED0900198BC6 /* GrandEntrance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6835AE0199CED0900198BC6 /* GrandEntranceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6835AEE199CED0900198BC6 /* Build configuration list for PBXNativeTarget "GrandEntranceTests" */;
+			buildPhases = (
+				B6835ADD199CED0900198BC6 /* Sources */,
+				B6835ADE199CED0900198BC6 /* Frameworks */,
+				B6835ADF199CED0900198BC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6835AE3199CED0900198BC6 /* PBXTargetDependency */,
+			);
+			name = GrandEntranceTests;
+			productName = GrandEntranceTests;
+			productReference = B6835AE1199CED0900198BC6 /* GrandEntranceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6835AC7199CED0900198BC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Simson Creative Solutions";
+				TargetAttributes = {
+					B6835ACE199CED0900198BC6 = {
+						CreatedOnToolsVersion = 6.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					B6835AE0199CED0900198BC6 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = B6835ACE199CED0900198BC6;
+					};
+				};
+			};
+			buildConfigurationList = B6835ACA199CED0900198BC6 /* Build configuration list for PBXProject "GrandEntrance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6835AC6199CED0900198BC6;
+			productRefGroup = B6835AD0199CED0900198BC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6835ACE199CED0900198BC6 /* GrandEntrance */,
+				B6835AE0199CED0900198BC6 /* GrandEntranceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6835ACD199CED0900198BC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6835ADA199CED0900198BC6 /* Main.storyboard in Resources */,
+				B65869CE19A7277F0019C474 /* radar@2x.png in Resources */,
+				B64CA81B19B1B35000DEEDE6 /* Settings.bundle in Resources */,
+				B65869D619A73B7F0019C474 /* status.caf in Resources */,
+				B6835AFE199CF59D00198BC6 /* spotify-logo@2x.png in Resources */,
+				B6835ADC199CED0900198BC6 /* Images.xcassets in Resources */,
+				B6835AF3199CF0A600198BC6 /* grandentrance-background-color@2x.png in Resources */,
+				B65869D819A742B50019C474 /* shake@2x.png in Resources */,
+				B65869D019A72EEB0019C474 /* note@2x.png in Resources */,
+				B6835AF6199CF21A00198BC6 /* grandentrance-logo@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6835ADF199CED0900198BC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CAE479AFA9F4EA38986FFC0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-GrandEntrance-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB8F368EFFE742FC8D28E80E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6835ACB199CED0900198BC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6C2467C19A67FE5004CB9DB /* SPOPAnimatableProperty.m in Sources */,
+				B6C2468019A67FE5004CB9DB /* SPOPCustomAnimation.m in Sources */,
+				B6C2468319A67FE5004CB9DB /* SPOPPropertyAnimation.m in Sources */,
+				B6081074199D004E00B159A3 /* SearchItem.swift in Sources */,
+				B6056D9119B072D500255F29 /* Transition.swift in Sources */,
+				B6835AD7199CED0900198BC6 /* ViewController.swift in Sources */,
+				B6C2468419A67FE5004CB9DB /* SPOPSpringAnimation.m in Sources */,
+				B6C2467F19A67FE5004CB9DB /* SPOPBasicAnimation.m in Sources */,
+				B6081071199CFE6900B159A3 /* SearchDataSource.swift in Sources */,
+				B6C2468219A67FE5004CB9DB /* SPOPMutableAnimatableProperty.m in Sources */,
+				B6835B00199CF77100198BC6 /* SearchViewController.swift in Sources */,
+				B6657F9119A684DD00693A40 /* RoundedButton.swift in Sources */,
+				B6835AD5199CED0900198BC6 /* AppDelegate.swift in Sources */,
+				B6C2467B19A67FE5004CB9DB /* SPOP.swift in Sources */,
+				B6C2467D19A67FE5004CB9DB /* SPOPAnimation.m in Sources */,
+				B6C2468119A67FE5004CB9DB /* SPOPDecayAnimation.m in Sources */,
+				B6C2467E19A67FE5004CB9DB /* SPOPAnimationTracer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6835ADD199CED0900198BC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6835AE8199CED0900198BC6 /* GrandEntranceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6835AE3199CED0900198BC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6835ACE199CED0900198BC6 /* GrandEntrance */;
+			targetProxy = B6835AE2199CED0900198BC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6835AD8199CED0900198BC6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6835AD9199CED0900198BC6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6835AE9199CED0900198BC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6835AEA199CED0900198BC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6835AEC199CED0900198BC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDFD2FB8E3D84699A7A20412 /* Pods-GrandEntrance.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = GrandEntrance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GrandEntrance/GrandEntrance-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6835AED199CED0900198BC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDFD2FB8E3D84699A7A20412 /* Pods-GrandEntrance.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = GrandEntrance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GrandEntrance/GrandEntrance-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		B6835AEF199CED0900198BC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GrandEntrance.app/GrandEntrance";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GrandEntranceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		B6835AF0199CED0900198BC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GrandEntrance.app/GrandEntrance";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GrandEntranceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6835ACA199CED0900198BC6 /* Build configuration list for PBXProject "GrandEntrance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6835AE9199CED0900198BC6 /* Debug */,
+				B6835AEA199CED0900198BC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6835AEB199CED0900198BC6 /* Build configuration list for PBXNativeTarget "GrandEntrance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6835AEC199CED0900198BC6 /* Debug */,
+				B6835AED199CED0900198BC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6835AEE199CED0900198BC6 /* Build configuration list for PBXNativeTarget "GrandEntranceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6835AEF199CED0900198BC6 /* Debug */,
+				B6835AF0199CED0900198BC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6835AC7199CED0900198BC6 /* Project object */;
+}
